@@ -20,6 +20,6 @@ def t():
         '''.format(name,current)
 @app.route("/gal")
 def g():
-    return'''<html><head><b>HAIDEEEE!!!!!</b></head></html>'''
+    return '''<html><head><b>HAIDEEEE!!!!!</b></head></html>'''
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True,port=8080)
