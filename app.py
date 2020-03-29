@@ -15,7 +15,7 @@ def t():
     </head>
     <body>
     <h2>{}, Current Time is: {}</h2>
-    <img src="/opt/gal.jpg" alt="Girl in a jacket">
+    <img src="gal.jpg" alt="Girl in a jacket">
     </body>
     </html>
         '''.format(name,current)
