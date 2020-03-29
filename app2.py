@@ -7,18 +7,7 @@ def t():
     name = 'gal'
     now = datetime.now()
     current = now.strftime("%H:%M:%S")
-    return '''
-       <html>
-    <head>
-        <meta http-equiv="refresh" content="10" />
-        <title>HTML in 10 Simple Steps or Less</title>
-    </head>
-    <body>
-    <h2>{}, Current Time is: {}</h2>
-    <img src="{{url_for('static', filename='gal.jpg')}}" align="middle" alt="fucking shit"/>
-    </body>
-    </html>
-        '''.format(name,current)
+    return render_template("index.html",name=name,current=current)
 @app.route("/gal")
 def g():
     return '''<html><head><b>HAIDEEEE!!!!!</b></head></html>'''
