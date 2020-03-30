@@ -6,4 +6,5 @@ RUN mkdir /opt/templates
 COPY index.html /opt/templates
 RUN mkdir /opt/static/
 COPY gal.jpg /opt/static
+COPY docker.png /opt/static
 CMD python /opt/app.py
