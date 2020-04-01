@@ -5,4 +5,5 @@ RUN mkdir /opt/templates && mkdir /opt/static/
 COPY index.html /opt/templates
 COPY gal.jpg /opt/static
 COPY docker.png /opt/static
-CMD python /opt/app.py
+#CMD python /opt/app.py
+ENTRYPOINT ["python", "/opt/app.py"]
