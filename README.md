@@ -13,8 +13,8 @@ A simple Web Application for Deploying in docker/swarm/k8s/openshift.
   * copies the html and static files to thier locations.
   * Runs the application
 # Build the docker image
-git pull https://github.com/galbirk/demo-webapp.git
-cd demo-webapp
-docker build -t <image_name>:<image_version> .
+- git pull https://github.com/galbirk/demo-webapp.git
+- cd demo-webapp
+- docker build -t <image_name>:<image_version> .
 # Run the docker 
 docker run -d --name <container_name> -p <port_on_host>:8080 <image_name>:<image_version>
