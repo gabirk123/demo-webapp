@@ -1,6 +1,6 @@
+![Python application](https://github.com/galbirk/demo-webapp/workflows/Python%20application/badge.svg)<br>
 # demo-webapp
-A simple Web Application for Deploying in docker/swarm/k8s/openshift.<br>
-![Python application](https://github.com/galbirk/demo-webapp/workflows/Python%20application/badge.svg)
+A simple Web Application for Deploying in docker/swarm/k8s/openshift.
 
 # Files
 - **app.py** -> The python web server file, contains 3 routes.
