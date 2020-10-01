@@ -29,5 +29,6 @@ jobs:
         docker build -t demo_webapp:latest .
     - name: Run Docker
       run: docker run -d --name myapp -p 80:8080 demo_webapp:latest 
+      
     - name: health check
-      run: curl http://localhost
+      run: curl localhost
