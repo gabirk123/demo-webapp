@@ -1,5 +1,6 @@
 # demo-webapp
 A simple Web Application for Deploying in docker/swarm/k8s/openshift.
+[![app-ci Actions Status](https://github.com/galbirk/demo-webapp/workflows/Python application/badge.svg)](https://github.com/galbirk/demo-webapp/actions)
 
 # Files
 - **app.py** -> The python web server file, contains 3 routes.
