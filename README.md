@@ -9,8 +9,7 @@ A simple Web Application for Deploying in docker/swarm/k8s/openshift.
   * Base image is ubuntu 16.04
   * installs requirements.
   * copies the code to /opt.
-  * creates templates and static folder.
-  * copies the html and static files to thier locations.
+  * copies templates and static folders.
   * Runs the application
 # Build the docker image
 - git pull https://github.com/galbirk/demo-webapp.git
