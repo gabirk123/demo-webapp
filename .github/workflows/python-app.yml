@@ -24,10 +24,10 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-    - name: build image
+    - name: build docker image
       run: |
-        docker build -t demo_webapp:latest
-    - name: Test with pytest
-      run: |
-        docker run -d --name myapp -p 80:8080 demo_webapp:latest
-        curl http://localhost
+        docker build -t demo_webapp:latest .
+    - name: Run Docker
+      run: docker run -d --name myapp -p 80:8080 demo_webapp:latest 
+    - name: health check
+      run: curl http://localhost
