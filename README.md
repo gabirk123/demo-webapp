@@ -19,4 +19,6 @@ cd demo-webapp
 docker build -t <image_name>:<image_version> .
 ```
 # Run the docker 
+```bash
 docker run -d --name <container_name> -p <port_on_host>:8080 <image_name>:<image_version>
+```
